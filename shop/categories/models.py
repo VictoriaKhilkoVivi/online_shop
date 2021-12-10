@@ -9,7 +9,7 @@ class Product(models.Model):
     # date_created = models.DateField('Дата публикации')
     categories = models.ManyToManyField('Category', verbose_name='Категории')
     images = models.ImageField(null=True, blank=True, upload_to='images/',
-                              verbose_name='Изображение')
+                               verbose_name='Изображение')
 
     class Meta:
         verbose_name = 'Товар'
