@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Описание товара</title>
+</head>
+<body>
+    {{ product }}
+    {{ product.price }}
+    {{ product.content }}
+    {% if product.images %}
+        {{ product.images.url }}
+    {% endif %}
+
+</body>
+</html>

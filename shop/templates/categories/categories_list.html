@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список категорий</title>
+</head>
+<body>
+ {% for category in categories %}
+
+         <a href="{% url 'products_list' category.id %}">{{ category }}</a>
+        <hr>
+
+ {% endfor %}
+
+</body>
+</html>
