@@ -8,8 +8,10 @@
     {{ product }}
     {{ product.price }}
     {{ product.content }}
-    {% if product.images %}
-    <img src="{{ product.images.url }}" alt="Smth" width="100px" height="100px"/>
+    {% if images %}
+    {% for image in images %}
+    <img src="{{ image }}" alt="Smth" width="100px" height="100px"/>
+    {% endfor %}
     {% endif %}
 
 </body>

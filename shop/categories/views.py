@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
-from .models import Category, Product
+from .models import Category, Product, ItemImage
 
 
 def categories_list(request):
@@ -23,7 +23,9 @@ def products_list(request, id):
 
 def product_description(request, id):
     product = Product.objects.get(id=id)
+    images = ItemImage.objects.filter(product=id)
     ctx = {
         'product': product,
+        'images': images,
     }
     return render(request, 'categories/product_description.html', ctx)
