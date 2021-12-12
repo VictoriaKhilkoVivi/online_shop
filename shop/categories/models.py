@@ -7,6 +7,7 @@ class Category(models.Model):
     name = models.CharField('Название', max_length=256)
 
     class Meta:
+        ordering = ['name']
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
 
@@ -21,6 +22,7 @@ class Product(models.Model):
     categories = models.ForeignKey(Category, verbose_name='Категории', on_delete=models.CASCADE)
 
     class Meta:
+        ordering = ['name']
         verbose_name = 'Товар'
         verbose_name_plural = 'Товары'
 
@@ -35,6 +37,7 @@ class ItemImage(models.Model):
                                 on_delete=models.CASCADE)
 
     class Meta:
+        ordering = ['alt']
         verbose_name = 'Картинка товара'
         verbose_name_plural = 'Картинка товаров'
 

@@ -4,7 +4,7 @@ from .models import Product, Category, ItemImage
 
 
 class ImageAdmin(admin.ModelAdmin):
-    list_display = ['alt']
+    list_display = ('alt',)
 
 
 admin.site.register(Category)

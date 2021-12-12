@@ -15,7 +15,9 @@ def categories_list(request):
 
 def products_list(request, id):
     products = Product.objects.filter(categories=id)
+    category = Category.objects.get(id=id)
     ctx = {
+        'category': category,
         'products': products,
     }
     return render(request, 'categories/products_list.html', ctx)
