@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.conf.global_settings import MEDIA_URL
 from django.db import models
 
 
@@ -37,4 +39,6 @@ class ItemImage(models.Model):
         verbose_name_plural = 'Картинка товаров'
 
     def __str__(self):
-        return self.image.url
+        return self.alt
+
+

@@ -10,7 +10,7 @@
     {{ product.content }}
     {% if images %}
     {% for image in images %}
-    <img src="{{ image }}" alt="Smth" width="100px" height="100px"/>
+    <img src="{{ image.image.url }}" alt="Smth" width="100px" height="100px"/>
     {% endfor %}
     {% endif %}
 
