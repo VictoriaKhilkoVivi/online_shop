@@ -4,6 +4,6 @@
 {% block content %}
     <h1>Список производителей</h1>
     {% for category in categories %}
-        <div class="row gx-5"><a class="categories" href="{% url 'products_list' category.id %}">{{ category }}</a></div>
+        <div class="row py-1"><a class="categories" href="{% url 'products_list' category.id %}">{{ category }}</a></div>
      {% endfor %}
 {% endblock %}

@@ -3,7 +3,7 @@
 {% block content %}
     <h1>Список товаров категории "{{ category }}"</h1>
     {% for product in products %}
-        <div class="row gx-5 products"><a href="{% url 'product_description' product.id %}">{{ product }}</div>
+        <div class="row py-1 products"><a href="{% url 'product_description' product.id %}">{{ product }}</div>
     {% endfor %}
 
 {% endblock %}
