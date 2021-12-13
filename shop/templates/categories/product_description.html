@@ -2,6 +2,7 @@
 {% load static %}
 {% block title %}Описание товара{% endblock %}
 {% block content %}
+<div class="white">
 <div class="row"><h1>{{ product }}</h1></div>
     <br/>
     {% if images %}
@@ -24,5 +25,6 @@
     <br/>
 <div class="row">
     <h4>Категория товара: {{ product.categories }}</h4>
+</div>
 </div>
 {% endblock %}

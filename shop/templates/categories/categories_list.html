@@ -4,7 +4,6 @@
 {% block content %}
     <h1>Список производителей</h1>
     <br/>
-    <img class="img-vin" src="{% static 'categories/images/neva.jpg' %}" align="right" alt="Smth" width="700px" height="500px"/>
     {% for category in categories %}
        <a class="categories" href="{% url 'products_list' category.id %}">{{ category }}</a>
         <br/>
