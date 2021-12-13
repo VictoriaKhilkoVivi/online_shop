@@ -13,6 +13,9 @@ text-decoration: none;
 .categories {
 font: italic small-caps bold 30px/2 cursive;
 }
+.products {
+font: italic bold 30px/2 cursive;
+}
 .categories:hover {
     text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
     color: mediumorchid; /* Ссылка красного цвета */

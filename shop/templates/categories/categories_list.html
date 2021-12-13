@@ -3,9 +3,7 @@
 {% block title %}Список категорий{% endblock %}
 {% block content %}
     <h1>Список производителей</h1>
-    <br/>
     {% for category in categories %}
-       <a class="categories" href="{% url 'products_list' category.id %}">{{ category }}</a>
-        <br/>
+        <div class="row gx-5"><a class="categories" href="{% url 'products_list' category.id %}">{{ category }}</a></div>
      {% endfor %}
 {% endblock %}
