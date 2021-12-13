@@ -1,9 +1,12 @@
 {% extends "categories/base.html" %}
+{% load static %}
 {% block title %}Список категорий{% endblock %}
 {% block content %}
-    <h1>Категории товаров</h1>
+    <h1>Список производителей</h1>
+    <br/>
+    <img class="img-vin" src="{% static 'categories/images/neva.jpg' %}" align="right" alt="Smth" width="700px" height="500px"/>
     {% for category in categories %}
-        <h5><a href="{% url 'products_list' category.id %}">{{ category }}</a></h5>
+       <a class="categories" href="{% url 'products_list' category.id %}">{{ category }}</a>
         <br/>
      {% endfor %}
 {% endblock %}
