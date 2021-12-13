@@ -40,5 +40,6 @@ body {
 	border-radius: 20px;
 }
 .white {
+height: 100vh;
 background-color: white;
 }
