@@ -1,0 +1,9 @@
+{% extends "categories/base.html" %}
+{% block title %}Список товаров{% endblock %}
+{% block content %}
+    <h1>Список товаров категории "{{ category }}"</h1>
+    {% for product in products %}
+        <div class="row py-1 products"><a href="{% url 'product_description' product.id %}">{{ product }}</div>
+    {% endfor %}
+
+{% endblock %}

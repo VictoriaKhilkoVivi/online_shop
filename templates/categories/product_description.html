@@ -1,0 +1,27 @@
+{% extends "categories/base.html" %}
+{% load static %}
+{% block title %}Описание товара{% endblock %}
+{% block content %}
+<div class="white">
+    <div class="row"><h1>{{ product }}</h1></div>
+        <br/>
+        {% if images %}
+            {% for image in images %}
+                <img src="{{ image.image.url }}" alt="Smth" width="200px" height="200px"/>
+            {% endfor %}
+        {% endif %}
+        <br/>
+    <div class="row py-2">
+        <h4>Стоимость: {{ product.price }}$</h4>
+    </div>
+    <div class="row py-2">
+        <h4>Описание:</h4>
+    </div>
+    <div class="row">
+        <h5>{{ product.content }}</h5>
+    </div>
+    <div class="row py-2">
+        <h4>Категория товара: {{ product.categories }}</h4>
+    </div>
+</div>
+{% endblock %}

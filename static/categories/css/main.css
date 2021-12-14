@@ -1,0 +1,48 @@
+h1 {
+color: mediumblue;
+font-family: 'Droid serif', serif;
+font-size: 36px; font-weight: 400;
+font-style: italic;
+line-height: 44px;
+margin: 0 0 12px;
+text-align: center;
+}
+a {
+text-decoration: none;
+}
+.categories {
+font: italic small-caps bold 30px/2 cursive;
+}
+.products {
+font: italic bold 30px/2 cursive;
+}
+.categories:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: mediumorchid; /* Ссылка красного цвета */
+}
+body {
+  background-color: lightcyan;
+  background-image: url("http://127.0.0.1:8000/static/categories/images/cat.jpg");
+  background-size: cover;
+}
+.img-vin {
+	-webkit-box-shadow:
+		0 1px 0 rgba(255,255,255,.2),
+		inset 0 4px 5px rgba(0,0,0,.6),
+		inset 0 1px 0 rgba(0,0,0,.6);
+	-moz-box-shadow:
+		0 1px 0 rgba(255,255,255,.2),
+		inset 0 4px 5px rgba(0,0,0,.6),
+		inset 0 1px 0 rgba(0,0,0,.6);
+	box-shadow:
+		0 1px 0 rgba(255,255,255,.2),
+		inset 0 4px 5px rgba(0,0,0,.6),
+		inset 0 1px 0 rgba(0,0,0,.6);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.white {
+height: 100vh;
+background-color: white;
+}

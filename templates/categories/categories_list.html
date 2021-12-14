@@ -1,0 +1,9 @@
+{% extends "categories/base.html" %}
+{% load static %}
+{% block title %}Список категорий{% endblock %}
+{% block content %}
+    <h1>Список производителей</h1>
+    {% for category in categories %}
+        <div class="row py-1"><a class="categories" href="{% url 'products_list' category.id %}">{{ category }}</a></div>
+     {% endfor %}
+{% endblock %}
